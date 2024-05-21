@@ -12,8 +12,7 @@ TASKS = {
               "npi_licensing.json", "quantifiers.json", "subject_verb_agreement.json"],
     "supplement": ["hypernym.json", "qa_congruence_easy.json", "qa_congruence_tricky.json",
                "subject_aux_inversion.json", "turn_taking.json"]
-    "sling": [
-    "alternative_haishi_ma.jsonl",
+    "sling": ["alternative_haishi_ma.jsonl",
     "anaphor_baseline_female.jsonl",
     "anaphor_baseline_male.jsonl",
     "anaphor_pp_female.jsonl",
@@ -53,9 +52,7 @@ TASKS = {
     "polarity_even_wh.jsonl",
     "polarity_more_or_less.jsonl",
     "rc_resumptive_noun.jsonl",
-    "rc_resumptive_pronoun.jsonl"
-]
-
+    "rc_resumptive_pronoun.jsonl"]
 }
 
 
