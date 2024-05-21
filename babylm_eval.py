@@ -12,6 +12,50 @@ TASKS = {
               "npi_licensing.json", "quantifiers.json", "subject_verb_agreement.json"],
     "supplement": ["hypernym.json", "qa_congruence_easy.json", "qa_congruence_tricky.json",
                "subject_aux_inversion.json", "turn_taking.json"]
+    "sling": [
+    "alternative_haishi_ma.jsonl",
+    "anaphor_baseline_female.jsonl",
+    "anaphor_baseline_male.jsonl",
+    "anaphor_pp_female.jsonl",
+    "anaphor_pp_male.jsonl",
+    "anaphor_self_female.jsonl",
+    "anaphor_self_male.jsonl",
+    "aspect_temporal_guo.jsonl",
+    "aspect_temporal_le.jsonl",
+    "aspect_zai_guo.jsonl",
+    "aspect_zai_le.jsonl",
+    "aspect_zai_no_le.jsonl",
+    "cl_adj_comp_noun.jsonl",
+    "cl_adj_comp_noun_v2.jsonl",
+    "cl_adj_simple_noun.jsonl",
+    "cl_comp_noun.jsonl",
+    "cl_comp_noun_v2.jsonl",
+    "cl_dem_cl_swap.jsonl",
+    "cl_simple_noun.jsonl",
+    "definiteness_demonstrative.jsonl",
+    "definiteness_every.jsonl",
+    "filenames.txt",
+    "fronting_bare_wh.jsonl",
+    "fronting_mod_wh.jsonl",
+    "pl_anaphor_baseline_cl_female.jsonl",
+    "pl_anaphor_baseline_cl_male.jsonl",
+    "pl_anaphor_baseline_cl_men_female.jsonl",
+    "pl_anaphor_baseline_cl_men_male.jsonl",
+    "pl_anaphor_baseline_men_female.jsonl",
+    "pl_anaphor_baseline_men_male.jsonl",
+    "pl_anaphor_cl_men_self_female.jsonl",
+    "pl_anaphor_cl_men_self_male.jsonl",
+    "pl_anaphor_cl_self_female.jsonl",
+    "pl_anaphor_cl_self_male.jsonl",
+    "pl_anaphor_menself_female.jsonl",
+    "pl_anaphor_menself_male.jsonl",
+    "polarity_any.jsonl",
+    "polarity_even_wh.jsonl",
+    "polarity_more_or_less.jsonl",
+    "rc_resumptive_noun.jsonl",
+    "rc_resumptive_pronoun.jsonl"
+]
+
 }
 
 
@@ -77,6 +121,10 @@ if __name__ == "__main__":
         elif task in TASKS["supplement"]:
             template = None
             task_title = task.split(".json")[0]
+            task = f"blimp_from_file:filter-data/supplement_filtered/{task}"
+        elif task in TASKS["sling"]:
+            template = None
+            task_title = task.split(".jsonl")[0]
             task = f"blimp_from_file:filter-data/supplement_filtered/{task}"
         else:
             raise ValueError("Unrecognized task!")
