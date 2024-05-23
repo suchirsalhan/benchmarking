@@ -11,7 +11,7 @@ TASKS = {
               "filler_gap.json", "irregular_forms.json", "island_effects.json",
               "npi_licensing.json", "quantifiers.json", "subject_verb_agreement.json"],
     "supplement": ["hypernym.json", "qa_congruence_easy.json", "qa_congruence_tricky.json",
-               "subject_aux_inversion.json", "turn_taking.json"]
+               "subject_aux_inversion.json", "turn_taking.json"],
     "sling": ["alternative_haishi_ma.jsonl",
     "anaphor_baseline_female.jsonl",
     "anaphor_baseline_male.jsonl",
