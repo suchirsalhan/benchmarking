@@ -1,4 +1,4 @@
-# BabyLM Evaluation Pipeline
+# Language Model Competence Benchmarking
 ![BabyLM Challenge](assets/babylm.png)
 
 ## Overview
